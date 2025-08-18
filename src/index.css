@@ -1,0 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass&family=Ubuntu&display=swap');
+@import "tailwindcss";
+
+@theme {
+    --font-ubuntu: "Ubuntu", sans-serif;
+    --font-overpass: "Overpass", sans-serif;
+}
