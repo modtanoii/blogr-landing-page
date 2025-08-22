@@ -5,3 +5,19 @@
     --font-ubuntu: "Ubuntu", sans-serif;
     --font-overpass: "Overpass", sans-serif;
 }
+.bg-Img {
+    background-image: url('/public/bg-pattern-intro-desktop.svg'), linear-gradient(135deg, hsl(13, 100%, 72%),hsl(353, 100%, 62%));
+    background-size: 350%, 100%;
+    background-position: 35% 34%, 0% 0%;
+    background-repeat: no-repeat, no-repeat;
+    border-bottom-left-radius: 100px;
+}
+
+.art-Img {
+    background-image: url('/public/bg-pattern-circles.svg'), linear-gradient(90deg, hsl(237, 17%, 21%), hsl(237, 23%, 31%));
+    background-size: 165%;
+    background-position: -120px -250px, 0 0;
+    background-repeat: no-repeat, no-repeat;
+    border-bottom-left-radius: 100px;
+    border-top-right-radius: 100px;
+}

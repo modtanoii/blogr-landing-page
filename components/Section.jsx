@@ -1,16 +1,47 @@
-import React from 'react'
+import React from "react";
 
 const Section = () => {
   return (
-    <div className='flex flex-col justify-center items-center text-white mt-20 h-50 relative px-20'>
-        <h1 className='text-6xl font-overpass'>A modern publishing platform</h1>
-        <p className='text-xl mt-4'>Grow you audience and build you online brand</p>
-        <div className='flex justify-center gap-3 mt-8 p-2'>
-            <div><button className='bg-white text-red-400 font-ubuntu font-bold rounded-4xl p-3 w-35'>Start for Free</button></div>
-            <div><button className='border border-white font-ubuntu font-bold rounded-4xl p-3 w-35'>Learn More</button></div>
+    <section className="font-overpass mt-25">
+      <h3 className="text-[27px] text-center">Designed for the future</h3>
+      <div className='my-13'>
+        <img
+          className='scale-108'
+          src="/src/assets/images/illustration-editor-desktop.svg"
+          srcset="/src/assets/images/illustration-editor-mobile.svg 375w,
+          /src/assets/images/illustration-editor-desktop.svg 1440W"
+          sizes="(max-width: 375px) 100vw, 1200px"
+          alt="editor"
+        />
+        <div className='mt-15'>
+          <h3 className="text-[27px] text-center leading-8">
+            Introducing an
+            <br />
+            extensible editor
+          </h3>
+          <p className="px-10 mt-3.5 text-center leading-7">
+            Blogr features an exceedingly intuitive interface which lets you
+            focus on one thing: creating content. The editor supports management
+            of multiple blogs and allows easy manipulation of embeds such as
+            images, videos, and Markdown. Extensibility with plugins and themes
+            provide easy ways to add functionality or change the looks of a
+            blog.
+          </p>
+          <h3 className="text-[27px] text-center mt-10 leading-8.5">
+            Robust content
+            <br />
+            management
+          </h3>
+          <p className="px-10 mt-6 text-center leading-7">
+            Flexible content management enables users to easily move through
+            posts. Increase the usability of your blog by adding customized
+            categories, sections, format, or flow. With this functionality,
+            you’re in full control.
+          </p>
         </div>
-    </div>
-  )
-}
+      </div>
+    </section>
+  );
+};
 
-export default Section
+export default Section;
