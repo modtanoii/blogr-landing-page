@@ -2,11 +2,11 @@ const Topic = () => {
   return (
     <div className="text-white relative">
       <img
-        className="w-full absolute bottom-60"
+        className="w-full absolute bottom-75 md:"
         src="/src/assets/images/illustration-phones.svg"
         alt="phones illustration"
       />
-      <h1 className="text-[38px] font-overpass text-center leading-12">
+      <h1 className="text-[38px] font-overpass text-center leading-12 mt-28">
         Stat of the Art Infrastructure
       </h1>
       <p className="px-10 mt-3.5 text-center leading-7">

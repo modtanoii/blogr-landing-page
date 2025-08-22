@@ -1,13 +1,11 @@
 const Header = () => {
   return (
-    <div className="flex flex-col justify-center items-center text-white mt-28">
-      <h1 className="text-[36px] font-overpass text-center leading-12">
-        A modern <br />
-        publishing platform
+    <div className="flex flex-col mx-6 mt-28 justify-center items-center text-white md:mt-35">
+      <h1 className="text-[36px] md:text-[60px] font-overpass text-center leading-12">
+        A modern publishing platform
       </h1>
-      <p className="font-overpass text-[19px] mt-2 text-gray-300 text-center leading-6">
-        Grow you audience and build your <br />
-        online brand
+      <p className="font-overpass text-[20px] mt-2 text-gray-300 text-center leading-6 md:mt-8">
+        Grow you audience and build your online brand
       </p>
       <div className="flex justify-center gap-4 mt-9 p-2">
         <div>

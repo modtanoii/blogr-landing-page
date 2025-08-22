@@ -8,14 +8,14 @@ function App() {
 
   return (
     <>
-      <div className='container bg-Img h-150'>
+      <div className='bg-Img h-150 md:h-145'>
         <Navbar />
         <Header />
       </div>
-      <div>
+      <div className='' >
         <Section />
       </div>
-      <div className='container art-Img h-155 mt-65 place-content-center'>
+      <div className='art-Img h-155 mt-65 place-content-center'>
         <Topic />
       </div>
     </>

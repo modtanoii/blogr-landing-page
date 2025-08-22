@@ -2,8 +2,8 @@ import React from "react";
 
 const Section = () => {
   return (
-    <section className="font-overpass mt-25">
-      <h3 className="text-[27px] text-center">Designed for the future</h3>
+    <section className="flex flex-col font-overpass mt-25 md:flex-row md:mt-15">
+      <h3 className="text-[27px] md:text-[38px] md:font-bold md:absolute">Designed for the future</h3>
       <div className='my-13'>
         <img
           className='scale-108'

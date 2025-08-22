@@ -12,7 +12,6 @@
     background-repeat: no-repeat, no-repeat;
     border-bottom-left-radius: 100px;
 }
-
 .art-Img {
     background-image: url('/public/bg-pattern-circles.svg'), linear-gradient(90deg, hsl(237, 17%, 21%), hsl(237, 23%, 31%));
     background-size: 165%;
