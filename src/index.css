@@ -5,18 +5,28 @@
     --font-ubuntu: "Ubuntu", sans-serif;
     --font-overpass: "Overpass", sans-serif;
 }
-.bg-Img {
-    background-image: url('/public/bg-pattern-intro-desktop.svg'), linear-gradient(135deg, hsl(13, 100%, 72%),hsl(353, 100%, 62%));
-    background-size: 350%, 100%;
-    background-position: 35% 34%, 0% 0%;
-    background-repeat: no-repeat, no-repeat;
+:root{
+    --background-gradient: linear-gradient(
+    120deg,
+    hsl(13, 100%, 72%), 
+    hsl(353, 100%, 62%)
+    )
+}
+
+.showcase {
+    background-image: var(--background-gradient);
+    height: 400px;
     border-bottom-left-radius: 100px;
 }
-.art-Img {
-    background-image: url('/public/bg-pattern-circles.svg'), linear-gradient(90deg, hsl(237, 17%, 21%), hsl(237, 23%, 31%));
-    background-size: 165%;
-    background-position: -120px -250px, 0 0;
-    background-repeat: no-repeat, no-repeat;
-    border-bottom-left-radius: 100px;
-    border-top-right-radius: 100px;
+
+.showcase .overlay {
+    background: url('/images/bg-pattern-intro-desktop.svg') no-repeat center;
+    min-height: 400px;
+}
+
+@media (min-width: 1024px) {
+    .showcase,
+    .showcase .overlay {
+        height:600px;
+    }
 }
