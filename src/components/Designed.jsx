@@ -1,10 +1,10 @@
 import editorDesktop from '/src/assets/images/illustration-editor-desktop.svg';
 import editorMobile from '/src/assets/images/illustration-editor-mobile.svg';
 
-const Section = () => {
+const Designed = () => {
   return (
     <section className='text-center py-20 px-5'>
-      <h2 className='text-3xl lg:text-4xl 2xl:text-5xl'>Designed for the future</h2>
+      <h2 className='text-center text-3xl lg:text-4xl 2xl:text-5xl'>Designed for the future</h2>
       <div className='flex flex-col-reverse md:grid md:grid-cols-2 md:gap-5 md:items-center md:text-left'>
         <div className='mt-10'>
           <h3 className='text-2xl mt-10 mb-5'>Introducing an extensible editor</h3>
@@ -35,4 +35,4 @@ const Section = () => {
   );
 };
 
-export default Section;
+export default Designed;

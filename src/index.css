@@ -6,11 +6,15 @@
     --font-overpass: "Overpass", sans-serif;
 }
 :root{
-    --background-gradient: linear-gradient(
-    120deg,
-    hsl(13, 100%, 72%), 
-    hsl(353, 100%, 62%)
-    )
+    --background-gradient: linear-gradient(120deg,hsl(13, 100%, 72%), hsl(353, 100%, 62%));
+    --state-bg-gradient: linear-gradient(90deg, hsl(237, 17%, 21%), hsl(237, 23%, 32%));
+    --graylish-black-blue: hsl(240, 10%, 16%);
+    --graylish-blue: hsl(240, 2%, 79%);
+    --very-dark-blue: hsl(208, 49%, 24%);
+}
+
+body {
+    overflow-x: hidden;
 }
 
 .showcase {
@@ -22,6 +26,31 @@
 .showcase .overlay {
     background: url('/images/bg-pattern-intro-desktop.svg') no-repeat center;
     min-height: 400px;
+}
+
+.state {
+    background-image: var(--state-bg-gradient);
+    border-radius: 0 100px 0 100px;
+    margin: 100px 0 50px;
+}
+
+.state .state-img {
+    position: absolute;
+    top:-20%;
+    height: 500px;
+    width: 100%;
+}
+
+.footer {
+    background-color: var(--graylish-black-blue);
+    color: var(--graylish-blue);
+    border-top-right-radius: 100px;
+}
+
+@media (min-width: 768px) {
+    .state .state-img {
+        width: 500px;
+    }
 }
 
 @media (min-width: 1024px) {
