@@ -18,15 +18,15 @@ const Header = () => {
   return (
     <>
       <header className="absolute p-5 flex items-center justify-between w-full">
-        <div>
+        <div className='mr-5'>
           <img src={logo} alt="blogr logo" />
         </div>
         {isOpen && (
           <>
-            <nav className='absolute py-[50px] top-[30px] left-1/2 transform -translate-x-1/2 w-[300px] bg-white mx-auto rounded-[5px] shadow-[0_5px_5px_rgba(0,0,0,0.15)] md:relative md:bg-transparent md:shadow-none md:w-auto md:p-0 md:left-0 md:top-0 md:translate-x-0 md:flex'>
+            <nav className='absolute py-[50px] top-[30px] left-1/2 transform -translate-x-1/2 w-[300px] bg-white mx-auto rounded-[5px] shadow-[0_5px_5px_rgba(0,0,0,0.15)] md:relative md:bg-transparent md:shadow-none md:p-0 md:left-0 md:top-0 md:translate-x-0 md:flex md:mx-0 md:w-full md:justify-between'>
               <ul className='flex flex-col items-center justify-center md:flex-row'>
                 {navLinks.map(({ id, title, links }) => (
-                  <li className='my-[10px] md:text-white md:m-0' key={id}>{title}</li>
+                  <li className='my-[10px] md:text-white md:mx-[10px]' key={id}>{title}</li>
                 ))}
               </ul>
               <Buttons />

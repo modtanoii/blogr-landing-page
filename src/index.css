@@ -11,6 +11,21 @@
     --graylish-black-blue: hsl(240, 10%, 16%);
     --graylish-blue: hsl(240, 2%, 79%);
     --very-dark-blue: hsl(208, 49%, 24%);
+    --light-red: hsl(356, 100%, 66%);
+}
+
+h1,h2,h3,h4,h5,h6 {
+    color: var(--very-dark-blue);
+}
+
+p {
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.btn-light {
+    color: var(--light-red);
+    font-weight: bold;
 }
 
 body {
