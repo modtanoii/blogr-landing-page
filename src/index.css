@@ -1,10 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Overpass&family=Ubuntu&display=swap');
 @import "tailwindcss";
 
-@theme {
-    --font-ubuntu: "Ubuntu", sans-serif;
-    --font-overpass: "Overpass", sans-serif;
-}
 :root{
     --background-gradient: linear-gradient(120deg,hsl(13, 100%, 72%), hsl(353, 100%, 62%));
     --state-bg-gradient: linear-gradient(90deg, hsl(237, 17%, 21%), hsl(237, 23%, 32%));
@@ -14,7 +10,16 @@
     --light-red: hsl(356, 100%, 66%);
 }
 
-h1,h2,h3,h4,h5,h6 {
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+h3 {
     color: var(--very-dark-blue);
 }
 
@@ -30,6 +35,7 @@ p {
 
 body {
     overflow-x: hidden;
+    font-family: "Overpass", sans-serif;
 }
 
 .showcase {
@@ -49,23 +55,10 @@ body {
     margin: 100px 0 50px;
 }
 
-.state .state-img {
-    position: absolute;
-    top:-20%;
-    height: 500px;
-    width: 100%;
-}
-
 .footer {
     background-color: var(--graylish-black-blue);
     color: var(--graylish-blue);
     border-top-right-radius: 100px;
-}
-
-@media (min-width: 768px) {
-    .state .state-img {
-        width: 500px;
-    }
 }
 
 @media (min-width: 1024px) {
